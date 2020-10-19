@@ -41,12 +41,15 @@ class Navbar extends Component {
 
         return <nav class="navbar navbar-main">
             <div class="container">
-                <div class="navbar-brand justify-content-center">
+                {/* <div class="navbar-brand justify-content-center">
                     <a class="navbar-item navbar-logo" href={siteUrl}>
                         {navbarLogo}
                     </a>
-                </div>
+                </div> */}
                 <div class="navbar-menu">
+                <a class="navbar-item navbar-logo" href={siteUrl}>
+                        {navbarLogo}
+                    </a>
                     {Object.keys(menu).length ? <div class="navbar-start">
                         {Object.keys(menu).map(name => {
                             const item = menu[name];
