@@ -1,3 +1,209 @@
+/**
+ * @desc Manny Cooper's personal icarus style
+ * @author MannyCooper
+ * @date 2020-10-18
+ */
+
+/* Basic
+---------------------------------------------------------------- */
+// Font
+$family-sans-serif ?= "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
+$family-code ?= menlo, monospace
+
+// Color
+$blue = rgb(0,122,255)
+$green = rgb(52,199,89)
+$indigo = rgb(88,86,214)
+$orange = rgb(255,149,0)
+$pink = rgb(255,45,85)
+$purple = rgb(175,82,222)
+$red = rgb(255,59,48)
+$teal = rgb(90,200,250)
+$yellow = rgb(255,204,0)
+
+$primary= $pink
+$info ?= $blue
+$success ?= $green
+$warning ?= $orange
+$danger ?= $red
+
+$gray = rgb(142,142,147)
+
+$light-gray2 = rgb(174,174,178)
+$light-gray3 = rgb(199,199,204)
+$light-gray4 = rgb(209,209,214)
+$light-gray5 = rgb(229,229,234)
+$light-gray6 = rgb(242,242,247)
+
+$dark-gray2 = rgb(99,99,102)
+$dark-gray3 = rgb(72,72,74)
+$dark-gray4 = rgb(58,58,60)
+$dark-gray5 = rgb(44,44,46)
+$dark-gray6 = rgb(28,28,30)
+
+$background = #f5f5f7
+
+// Background color(Light Mode)
+$body-background-color = $background
+
+$link = $primary
+$link-hover = black
+$menu-item-hover-background-color = $light-gray6
+$menu-item-active-background-color = $light-gray6
+$tag-background-color = $light-gray6
+$button-border-color = $primary
+$button-color = white
+$button-hover-background-color = $red
+$button-hover-border-color = $red
+$button-hover-color = white
+$button-active-background-color = $red
+$button-active-border-color = $red
+$button-active-color = white
+
+.widget .tags .tag:first-child
+    background: $light-gray6 !important
+    color: $dark-gray4 !important
+
+.widget .tags .tag:last-child
+    background: $light-gray5 !important
+    color: $dark-gray3 !important
+
+// Code highlight frame color
+figure.highlight figcaption,
+figure.highlight .gutter
+    background: $light-gray6
+    color: $dark-gray4
+
+#busuanzi_value_site_uv
+    color: $primary
+
+.card-link
+    color: inherit
+    cursor: auto
+
+form .control .button
+    background-color: $primary !important
+
+.input:active, .input:focus
+    box-shadow: none !important
+
+// All card radius
+$radius = 15px
+
+.widget .menu-list .level
+    border-radius: $radius
+
+article.media .image img
+    border-radius: $radius
+
+.gallery-item img
+    border-radius: $radius
+
+.order-2 .controller ~ .card .article .content .message.message-immersive
+    margin: 0 -1rem 1.5rem -1rem !important
+
+.message.message-immersive
+    border-radius: 15px !important
+    margin: 0 -1rem 0rem -1rem !important
+
+// Font
+.title.is-3
+    font-size: 32px
+    line-height: 1.125
+    font-weight: 700
+    letter-spacing: .004em
+
+.is-size-6
+    margin-bottom: 5px
+
+.menu-list a.is-active
+    font-weight: 500
+
+.order-2 .card-content
+    padding: 2rem;
+
+// Navbar float
+.navbar-main
+    position: fixed !important
+    width: 100% !important
+
+.section
+    padding: 6.25em 1.5rem
+    margin-top: 45px
+
+.navbar,
+.navbar-menu
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
+    backdrop-filter: saturate(180%) blur(20px)
+
+.navbar
+    background-color: rgba(255,255,255,0.7) !important
+
+.navbar-main .navbar-menu
+    background: transparent
+
+.navbar-item
+    margin: 4px !important
+    padding: 9.5px !important
+
+
+/* Motion Design
+---------------------------------------------------------------- */
+// Navbar item
+a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-link:focus-within, a.navbar-item:hover, .navbar-link:hover, a.navbar-item.is-active, .navbar-link.is-active
+    border-radius: 18px
+    background-color $background !important
+
+// Widget item hover radius
+.menu-list a:hover
+    border-radius: $radius
+
+// Card Image
+.card:hover
+    .card-image a
+        -webkit-transform: scale(1.03)
+        transform: scale(1.03)
+
+.card .card-image a
+    -webkit-transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    -webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
+
+// Fix border radius when transforming
+.card-image
+    -webkit-transform: rotate(0deg)
+
+// Tags
+.tags.has-addons:hover, .menu-list .level.is-mobile:hover
+    -webkit-transform translateY(-3px)
+    transform: translateY(-3px)
+    -webkit-transform: scale(1.03)
+    transform: scale(1.03)
+
+.tags.has-addons, .menu-list .level.is-mobile
+    -webkit-transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    -webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
+
+// Card
+.order-2 .card:hover
+    transform: translateY(-5px)
+    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
+    -webkit-transform: translateY(-5px)
+    -webkit-box-shadow:s 1px 10px 30px 0 rgba(0,0,0,.1)
+
+// Add .controller (article.jsx) to invalidate the motion on the article page
+.order-2 .controller ~ .card:hover
+    transform: none
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+    -webkit-transform: none
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+
+.card
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.6s !important
+
 // Base CSS framework
 @import '../../include/style/base'
 // Helper classes & mixins
@@ -16,3 +222,21 @@
 @import '../../include/style/donate'
 @import '../../include/style/plugin'
 @import '../../include/style/responsive'
+
+.breadcrumb:not(:last-child),
+.level:not(:last-child),
+.list:not(:last-child),
+.message:not(:last-child),
+.pagination:not(:last-child),
+.tabs:not(:last-child),
+.box:not(:last-child),
+.content:not(:last-child),
+.notification:not(:last-child),
+.progress:not(:last-child),
+.table:not(:last-child),
+.table-container:not(:last-child),
+.title:not(:last-child),
+.subtitle:not(:last-child),
+.block:not(:last-child),
+.highlight:not(:last-child)
+    margin-bottom: 1rem;

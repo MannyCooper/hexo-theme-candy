@@ -1,5 +1,5 @@
 const moment = require('moment');
-const { Component, Fragment } = require('inferno');
+const { Component, Fragment, render } = require('inferno');
 const Share = require('./share');
 const Donates = require('./donates');
 const Comment = require('./comment');
@@ -28,6 +28,8 @@ module.exports = class extends Component {
         const cover = page.cover ? url_for(page.cover) : null;
 
         return <Fragment>
+            {/* Add .controller to invalidate the motion on the article page */}
+            {!index ? <div class="controller"></div>: null}
             {/* Main content */}
             <div class="card">
                 {/* Thumbnail */}
@@ -39,6 +41,8 @@ module.exports = class extends Component {
                     </span>}
                 </div> : null}
                 {/* Metadata */}
+                <a class="card-link" href={index ? url_for(page.link || page.path):null}>
+                <object class="card-object">
                 <article class={`card-content article${'direction' in page ? ' ' + page.direction : ''}`} role="article">
                     {page.layout !== 'page' ? <div class="article-meta is-size-7 is-uppercase level is-mobile">
                         <div class="level-left">
@@ -70,7 +74,9 @@ module.exports = class extends Component {
                                 {(() => {
                                     const words = getWordCount(page._content);
                                     const time = moment.duration((words / 150.0) * 60, 'seconds');
-                                    return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())} (${_p('article.word_count', words)})`;
+                                    // return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())} (${_p('article.word_count', words)})`;
+                                    return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())}`;
+
                                 })()}
                             </span> : null}
                             {/* Visitor counter */}
@@ -96,10 +102,12 @@ module.exports = class extends Component {
                         })}
                     </div> : null}
                     {/* "Read more" button */}
-                    {index && page.excerpt ? <a class="article-more button is-small is-size-7" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null}
+                    {/* {index && page.excerpt ? <a class="article-more button is-small is-size-7" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null} */}
                     {/* Share button */}
                     {!index ? <Share config={config} page={page} helper={helper} /> : null}
                 </article>
+                </object>
+                </a>
             </div>
             {/* Donate button */}
             {!index ? <Donates config={config} helper={helper} /> : null}
