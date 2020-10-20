@@ -4,6 +4,8 @@
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-card2.gif" width="50%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-item.gif" width="50%">
 - [ ] Dark mode
 - [x] Config [twikoo](https://github.com/imaegoo/twikoo) comment
+
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_Comment.png" width="60%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_backend.png" width="40%">
+
 [Twikoo](https://github.com/imaegoo/twikoo) is a simple, safe, serverless comment system based on Tencent CloudBase. It still be in developing.
 - [ ] Detail fix
