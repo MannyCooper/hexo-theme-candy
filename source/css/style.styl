@@ -21,6 +21,8 @@ $red = rgb(255,59,48)
 $teal = rgb(90,200,250)
 $yellow = rgb(255,204,0)
 
+$commentbg = RGB(255, 114, 134)
+
 $primary= $pink
 $info ?= $blue
 $success ?= $green
@@ -146,6 +148,25 @@ article.media .image img
     margin: 4px !important
     padding: 9.5px !important
 
+// Comment
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover{
+    background-color: $commentbg !important;
+    border-color: $commentbg !important;
+}
+
+.el-button--primary{
+    background-color: $primary !important;
+    border-color: $primary !important;
+}
+
+.tk-action-link[data-v-8d454e16],.tk-action-icon[data-v-8d454e16] svg{
+    fill: $primary !important;
+    color: $primary !important;
+}
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner:focus{
+    border-color: $primary !important;
+}
 
 /* Motion Design
 ---------------------------------------------------------------- */
