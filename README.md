@@ -3,5 +3,6 @@
 ![overview](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/展示2.png)
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-card2.gif" width="50%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-item.gif" width="50%">
 - [ ] Dark mode
-- [ ] Config [twikoo](https://github.com/imaegoo/twikoo) comment
+- [x] Config [twikoo](https://github.com/imaegoo/twikoo) comment
+<img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_Comment.png" width="60%">
 - [ ] Detail fix
