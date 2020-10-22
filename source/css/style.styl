@@ -76,9 +76,6 @@ figure.highlight .gutter
     background: $light-gray6
     color: $dark-gray4
 
-figure.highlight .highlight-body
-    margin: 0.7rem
-    
 #busuanzi_value_site_uv
     color: $primary
 
@@ -129,15 +126,12 @@ article.media .image img
 
 // Navbar float
 .navbar-main
-    // position: fixed !important
-    // width: 100% !important
-    position: sticky !important
-    position: -webkit-sticky !important
-    top: 0px
+    position: fixed !important
+    width: 100% !important
 
 .section
     padding: 6.25em 1.5rem
-    // margin-top: 45px
+    margin-top: 45px
 
 .navbar,
 .navbar-menu
@@ -155,41 +149,24 @@ article.media .image img
     padding: 9.5px !important
 
 // Comment
-.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover{
     background-color: $commentbg !important;
     border-color: $commentbg !important;
+}
 
-
-.el-button--primary
+.el-button--primary{
     background-color: $primary !important;
     border-color: $primary !important;
+}
 
-
-.tk-action-link[data-v-8d454e16],.tk-action-icon[data-v-8d454e16] svg
+.tk-action-link[data-v-8d454e16],.tk-action-icon[data-v-8d454e16] svg{
     fill: $primary !important;
     color: $primary !important;
+}
 
-
-.el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner:focus
-    border-color: $primary !important
-
-
-.fill_dark
-    visibility: hidden
-
-.fill
-    visibility: visible
-
-
-#toc
-    top: 73px
-
-:target::before 
-  content: ""
-  display: block
-  height: 5.25rem
-  margin: -5.25rem 0 0
-
+.el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner:focus{
+    border-color: $primary !important;
+}
 
 /* Motion Design
 ---------------------------------------------------------------- */
@@ -284,5 +261,3 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 .block:not(:last-child),
 .highlight:not(:last-child)
     margin-bottom: 1rem;
-
-@import 'dark'

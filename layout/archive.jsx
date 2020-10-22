@@ -1,7 +1,7 @@
 const moment = require('moment');
 const { Component, Fragment } = require('inferno');
 const Paginator = require('hexo-component-inferno/lib/view/misc/paginator');
-const ArticleMedia = require('./common/article_media');
+const ArticleMedia = require('hexo-component-inferno/lib/view/common/article_media');
 
 module.exports = class extends Component {
     render() {
@@ -28,9 +28,7 @@ module.exports = class extends Component {
                                 date={date(post.date)}
                                 dateXml={date_xml(post.date)}
                                 categories={categories}
-                                thumbnail={post.thumbnail ? url_for(post.thumbnail) : null}
-                                thumbnail_dark={post.thumbnail_dark ? url_for(post.thumbnail_dark) : post.thumbnail}
-                                />;
+                                thumbnail={post.thumbnail ? url_for(post.thumbnail) : null} />;
                         })}
                     </div>
                 </div>
