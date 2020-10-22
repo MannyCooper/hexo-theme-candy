@@ -17,6 +17,7 @@ module.exports = class extends Component {
         return <html lang={language ? language.substr(0, 2) : ''}>
             <Head site={site} config={config} helper={helper} page={page} />
             <body class={`is-${columnCount}-column`}>
+                <script type="text/javascript" src="/js/dark.js"></script>
                 <Navbar config={config} helper={helper} page={page} />
                 <section class="section">
                     <div class="container">

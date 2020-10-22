@@ -26,6 +26,7 @@ module.exports = class extends Component {
         const indexLaunguage = config.language || 'en';
         const language = page.lang || page.language || config.language || 'en';
         const cover = page.cover ? url_for(page.cover) : null;
+        const cover_dark = page.cover_dark ? url_for(page.cover_dark) : cover;
 
         return <Fragment>
             {/* Add .controller to invalidate the motion on the article page */}
@@ -36,8 +37,10 @@ module.exports = class extends Component {
                 {cover ? <div class="card-image">
                     {index ? <a href={url_for(page.link || page.path)} class="image is-7by3">
                         <img class="fill" src={cover} alt={page.title || cover} />
+                        <img class="fill_dark" src={cover_dark} alt={page.title || cover_dark}/>
                     </a> : <span class="image is-7by3">
                         <img class="fill" src={cover} alt={page.title || cover} />
+                        <img class="fill_dark" src={cover_dark} alt={page.title || cover_dark}/>
                     </span>}
                 </div> : null}
                 {/* Metadata */}
