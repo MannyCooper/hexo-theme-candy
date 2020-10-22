@@ -2,7 +2,8 @@
 - [x] Basic design
 ![overview](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/展示2.png)
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/zipped_frosted_glass.gif"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-card2.gif" width="50%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-item.gif" width="50%">
-- [ ] Dark mode
+- [x] Dark mode
+（展示图片正在施工中...）
 - [x] Config [twikoo](https://github.com/imaegoo/twikoo) comment
 
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_Comment.png" width="60%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_backend.png" width="40%">
