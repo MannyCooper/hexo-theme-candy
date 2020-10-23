@@ -10,4 +10,5 @@
 
 [Twikoo](https://github.com/imaegoo/twikoo) is a simple, safe, serverless comment system based on Tencent CloudBase. It still be in developing.
 - [ ] Improve Code Highlight
+- [ ] Improve Markdown style
 - [ ] Detail fix
