@@ -3,6 +3,7 @@
 ![overview](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/展示2.png)
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/zipped_frosted_glass.gif"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-card2.gif" width="50%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-item.gif" width="50%">
 - [x] Dark mode
+![](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/dark-mode-mini-3.gif)
 （展示图片正在施工中...）
 - [x] Config [twikoo](https://github.com/imaegoo/twikoo) comment
 
