@@ -6,6 +6,7 @@
 
 /* Basic
 ---------------------------------------------------------------- */
+$radius = 15px
 // Font
 $family-sans-serif ?= "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
 $family-code ?= menlo, monospace
@@ -71,6 +72,14 @@ $button-active-color = white
     color: $dark-gray3 !important
 
 // Code highlight frame color
+pre
+    background-color: #fafafa !important
+    border-radius: $radius
+    padding-bottom: 20px !important
+    padding-left: 24px !important
+    padding-right: 24px !important
+    padding-top: 20px !important
+
 figure.highlight figcaption,
 figure.highlight .gutter
     background: $light-gray6
@@ -78,7 +87,29 @@ figure.highlight .gutter
 
 figure.highlight .highlight-body
     margin: 0.7rem
-    
+
+article.article .content code
+    background: #fafafa !important
+
+code
+    border-radius: 8px
+    margin: 2px
+    padding: 0.25em 0.5em 0.25em !important
+
+pre code
+    border-radius: 0px !important
+    margin: 0px !important
+    padding: 0px !important
+
+.content blockquote
+    background-color: #fafafa !important
+    border-left: 15px solid $light-gray6 !important
+    border-radius: 15px
+    box-shadow: 1px 5px 10px 0 rgba(0,0,0,0.05);
+
+.caption
+    color: $light-gray3
+
 #busuanzi_value_site_uv
     color: $primary
 
@@ -93,8 +124,6 @@ form .control .button
     box-shadow: none !important
 
 // All card radius
-$radius = 15px
-
 .widget .menu-list .level
     border-radius: $radius
 
@@ -210,9 +239,9 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 
 .card .card-image a
     -webkit-transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
-    -webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
+    -webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1),200ms -webkit-filter linear
     transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
-    transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
+    transform 400ms cubic-bezier(0.4, 0, 0.25, 1),200ms filter linear
 
 // Fix border radius when transforming
 .card-image
@@ -236,7 +265,7 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
     transform: translateY(-5px)
     box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
     -webkit-transform: translateY(-5px)
-    -webkit-box-shadow:s 1px 10px 30px 0 rgba(0,0,0,.1)
+    -webkit-box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
 
 // Add .controller (article.jsx) to invalidate the motion on the article page
 .order-2 .controller ~ .card:hover
@@ -247,6 +276,9 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 
 .card
     transition: opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.6s !important
+
+.card-link:hover
+    color: inherit !important
 
 // Base CSS framework
 @import '../../include/style/base'
