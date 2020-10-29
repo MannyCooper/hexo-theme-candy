@@ -137,7 +137,8 @@
 
     // Add code type
     $("code").each(function(){
-        $(this).before("<p class='code-type'>"+ $(this).attr('class').replace('hljs ','') +"</p>")
+        if ($(this).parent().is("pre")) {
+        $(this).before("<p class='code-type'>"+ $(this).attr('class').replace('hljs ','') +"</p>")}
     });
     
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
