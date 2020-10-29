@@ -74,13 +74,17 @@ body.dark
 
   .content table thead td, .content table thead th
     color: white !important
-  
+
+  .code-type
+    color: grey
+
+  pre .caption
+    color: $dark-gray3
+    background-color: $dark-gray4 !important
+
   .content blockquote
     background-color: $dark-gray5 !important
     border-left: 15px solid $dark-gray4 !important
-
-  .caption
-    color: $dark-gray3
 
   // Post Image
   .fill_dark
@@ -187,6 +191,8 @@ body.dark
     background-color $card-background-color
     border-radius 15px
     color white
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.49)
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.49)
   
   .title
     color: white

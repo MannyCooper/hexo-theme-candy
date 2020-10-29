@@ -134,4 +134,10 @@
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
+
+    // Add code type
+    $("code").each(function(){
+        $(this).before("<p class='code-type'>"+ $(this).attr('class').replace('hljs ','') +"</p>")
+    });
+    
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
