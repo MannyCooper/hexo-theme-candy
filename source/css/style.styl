@@ -6,7 +6,8 @@
 
 /* Basic
 ---------------------------------------------------------------- */
-$radius = 15px
+$radius = 25px
+$radius_small = 15px
 // Font
 $family-sans-serif ?= "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
 $family-code ?= menlo, monospace
@@ -122,12 +123,13 @@ pre .caption
 
 .content blockquote
     background-color: #fafafa !important
-    border-left: 15px solid $light-gray6 !important
-    border-radius: 15px
+    border-left: $radius_small solid $light-gray6 !important
+    border-radius: $radius_small
     box-shadow: 1px 5px 10px 0 rgba(0,0,0,0.05);
 
 .caption
     color: $light-gray3
+    text-align: center
 
 #busuanzi_value_site_uv
     color: $primary
@@ -147,7 +149,7 @@ form .control .button
     border-radius: $radius
 
 article.media .image img
-    border-radius: $radius
+    border-radius: $radius_small
 
 .gallery-item img
     border-radius: $radius
