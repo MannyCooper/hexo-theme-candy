@@ -10,7 +10,7 @@ $radius = 25px
 $radius_small = 15px
 // Font
 $family-sans-serif ?= "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-$family-code ?= menlo, monospace
+$family-code ?= SF Mono,Meno,monospace
 
 // Color
 $blue = rgb(0,122,255)
@@ -93,11 +93,13 @@ code
     border-radius: 8px
     margin: 2px
     padding: 0.25em 0.5em 0.25em !important
+    background-color: #fafafa !important
 
 pre code
     border-radius: 0px !important
     margin: 0px !important
     padding: 0px !important
+    background-color: transparent !important
 
 .code-type
     position: absolute
@@ -242,8 +244,11 @@ article.media .image img
 
 .lg-backdrop.in
     background-color: rgba(1,1,1,0.5) !important
-    -webkit-backdrop-filter: blur(8px);	
-    backdrop-filter: blur(8px);	
+    -webkit-backdrop-filter: blur(8px)
+    backdrop-filter: blur(8px)
+
+.help
+    color: $light-gray2
 
 /* Motion Design
 ---------------------------------------------------------------- */
