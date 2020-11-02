@@ -10,6 +10,8 @@
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_Comment.png" width="60%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/Twikoo_backend_fixed.png" width="40%">
 
 [Twikoo](https://github.com/imaegoo/twikoo) is a simple, safe, serverless comment system based on Tencent CloudBase. It still be in developing.
-- [ ] Improve Code Highlight
+- [x] Improve Code Highlight
+![](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/code-block.png)
 - [ ] Improve Markdown style
+- [ ] Better image lazy load
 - [ ] Detail fix
