@@ -225,30 +225,41 @@ article.media .image img
 .el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner:focus
     border-color: $primary !important
 
-
+// cover & thumbnail for light & dark
 .fill_dark
     visibility: hidden
 
 .fill
     visibility: visible
 
-
+// Fix toc
 #toc
     top: 73px
 
+// Fix footpoint redirection position
 :target::before 
   content: ""
   display: block
   height: 5.25rem
   margin: -5.25rem 0 0
 
+// Image gallery
 .lg-backdrop.in
     background-color: rgba(1,1,1,0.5) !important
     -webkit-backdrop-filter: blur(8px)
     backdrop-filter: blur(8px)
 
+// Email subscribe
 .help
     color: $light-gray2
+
+// Fix article-meta (auto warp on small screen)
+.article-meta.is-size-7.is-uppercase.level.is-mobile .level-left
+    flex-wrap: wrap
+    max-width: 100%
+
+.level.is-mobile .level-item:not(.is-narrow)
+    flex-grow: 0 !important
 
 /* Motion Design
 ---------------------------------------------------------------- */
