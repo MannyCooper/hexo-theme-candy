@@ -79,7 +79,7 @@ body.dark
     color: white !important
 
   .code-type
-    color: grey
+    color: grey !important
 
   pre .caption
     color: $dark-gray3
@@ -187,8 +187,8 @@ body.dark
   .timeline .media:last-child:after
     background $card-background-color
 
-  strong
-    color: white
+  a strong
+  color: currentColor
   
   #dark-nav #dark-icon:before
     content: "\f0eb"
@@ -242,6 +242,19 @@ body.dark
     background-color: $dark-gray5
     border: 1px solid $dark-gray5
     color: white
+
+  .message.is-info
+    background-color: #202326
+
+  .message.is-info .message-header
+    background-color: #00336b;
+
+  .message.is-info .message-body
+    color: #65a1e3
+
+  .content p
+    color: #dddddd
+  //
   
   .el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner:focus
     border-color: $dark-primary

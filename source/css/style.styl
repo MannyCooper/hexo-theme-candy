@@ -112,7 +112,7 @@ pre .caption
     background-color: $light-gray6
     color: darkgrey !important
     margin-top: -20px
-    border-radius: 15px 15px 0px 0px
+    border-radius: $radius $radius 0px 0px
     margin-right: -24px;
     margin-left: -24px
     padding-left: 15px
@@ -160,8 +160,14 @@ article.media .image img
     margin: 0 -1rem 1.5rem -1rem !important
 
 .message.message-immersive
-    border-radius: 15px !important
+    border-radius: $radius_small !important
     margin: 0 -1rem 0rem -1rem !important
+
+.message.is-info
+    border-radius: $radius_small !important
+    
+.message-header
+    border-radius: $radius_small $radius_small 0 0 !important
 
 // Font
 .title.is-3
@@ -243,7 +249,7 @@ article.media .image img
   height: 5.25rem
   margin: -5.25rem 0 0
   padding-top: 73px
-  
+
 .footnote-ref a:target::before 
   display: inline-block !important
 
@@ -266,11 +272,21 @@ article.media .image img
     flex-grow: 0 !important
 
 // Responsive
-@media screen and (max-width: 768px) {
-  .section {
-    padding: 1.5rem 0.5rem !important
-  }
-}
+@media screen and (max-width: 768px)
+    .section
+        padding: 1.5rem 0.5rem !important
+        .is-size-4-mobile
+            font-size: 2rem !important
+
+.cc-window
+    border-radius: $radius
+
+.message-body
+    padding: 0em 1.5em 1em !important
+
+.content p
+    line-height: 1.8
+    // color: #cbcbcb
 
 /* Motion Design
 ---------------------------------------------------------------- */
