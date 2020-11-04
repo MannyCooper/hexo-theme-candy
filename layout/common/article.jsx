@@ -26,6 +26,7 @@ module.exports = class extends Component {
         const indexLaunguage = config.language || 'en';
         const language = page.lang || page.language || config.language || 'en';
         const cover = page.cover ? url_for(page.cover) : null;
+        const cover_dark = page.cover_dark ? url_for(page.cover_dark) : cover;
 
         return <Fragment>
             {/* Add .controller to invalidate the motion on the article page */}
@@ -36,8 +37,10 @@ module.exports = class extends Component {
                 {cover ? <div class="card-image">
                     {index ? <a href={url_for(page.link || page.path)} class="image is-7by3">
                         <img class="fill" src={cover} alt={page.title || cover} />
+                        <img class="fill_dark" src={cover_dark} alt={page.title || cover_dark}/>
                     </a> : <span class="image is-7by3">
                         <img class="fill" src={cover} alt={page.title || cover} />
+                        <img class="fill_dark" src={cover_dark} alt={page.title || cover_dark}/>
                     </span>}
                 </div> : null}
                 {/* Metadata */}
@@ -80,8 +83,10 @@ module.exports = class extends Component {
                                 })()}
                             </span> : null}
                             {/* Visitor counter */}
-                            {!index && plugins && plugins.busuanzi === true ? <span class="level-item" id="busuanzi_container_page_pv" dangerouslySetInnerHTML={{
-                                __html: _p('plugin.visit_count', '<span id="busuanzi_value_page_pv">0</span>')
+                            {/* {!index && plugins && plugins.busuanzi === true ? <span class="level-item" id="busuanzi_container_page_pv" dangerouslySetInnerHTML={{ */}
+                                {/* __html: _p('plugin.visit_count', '<span id="busuanzi_value_page_pv">0</span>') */}
+                            {!index ? <span id={url_for(page.link || page.path)} class="level-item leancloud_visitors" data-flag-title={page.title} dangerouslySetInnerHTML={{
+                                __html: '<i class="far fa-eye"></i>' + _p('plugin.visit_count', '&nbsp;&nbsp;<span id="twikoo_visitors"><i class="fa fa-spinner fa-spin"></i></span>')
                             }}></span> : null}
                         </div>
                     </div> : null}

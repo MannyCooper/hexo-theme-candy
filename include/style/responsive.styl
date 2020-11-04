@@ -1,17 +1,21 @@
 /* ---------------------------------
  *         Responsive Layout
  * --------------------------------- */
-+widescreen()
-    .is-1-column .container, .is-2-column .container
-        max-width: $desktop - 2 * $gap
-        width: $desktop - 2 * $gap
-
 +fullhd()
+    .is-3-column .container
+        max-width: $fullhd - 31px
+        width: $fullhd - 31px
+
     .is-2-column .container
         max-width: $widescreen - 2 * $gap
         width: $widescreen - 2 * $gap
 
     .is-1-column .container
+        max-width: $desktop - 2 * $gap
+        width: $desktop - 2 * $gap
+
++widescreen()
+    .is-1-column .container, .is-2-column .container
         max-width: $desktop - 2 * $gap
         width: $desktop - 2 * $gap
 
