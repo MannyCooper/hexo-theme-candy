@@ -30,7 +30,7 @@ function checkConfig(hexo) {
         logger.info('=== Checking theme configurations ===');
 
         const siteCfgFile = path.join(hexo.base_dir, '_config.yml');
-        const themeSiteCfg = path.join(hexo.base_dir, '_config.icarus.yml');
+        const themeSiteCfg = path.join(hexo.base_dir, '_config.candy.yml');
         const themeDirCfg = path.join(hexo.theme_dir, '_config.yml');
         const themeCfgPaths = [themeDirCfg, themeSiteCfg].filter(cfgPath => fs.existsSync(cfgPath));
         const themeSiteCfgExample = themeSiteCfg + '.example';
