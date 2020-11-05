@@ -3,22 +3,46 @@
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
-            $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
+            if ($(this).hasClass("fill_dark")) {
+            $(this).wrap('<a class="gallery-item dark_img" href="' + $(this).attr('src') + '"></a>');}
+            else if ($(this).hasClass("fill")) {
+            $(this).wrap('<a class="gallery-item light_img" href="' + $(this).attr('src') + '"></a>');
+            }
+            else {
+                $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
+            }
             if (this.alt) {
                 $(this).after('<p class="has-text-centered is-size-6 caption">' + this.alt + '</p>');
             }
         }
     });
-
+    
     if (typeof $.fn.lightGallery === 'function') {
         $('.article').lightGallery({ selector: '.gallery-item' });
+        // $('.article').each(function (index) {
+        //     $('#' + this.id).lightGallery({
+        //         selector: '.gallery-item',
+        //         share: false,
+        //         galleryId: index
+        //     });
+        // })
     }
+
     if (typeof $.fn.justifiedGallery === 'function') {
         if ($('.justified-gallery > p > .gallery-item').length) {
             $('.justified-gallery > p > .gallery-item').unwrap();
         }
         $('.justified-gallery').justifiedGallery();
     }
+
+    // if (typeof $.fn.lightGallery === 'function') {
+    //     if ($(this).hasClass("fill_dark")) {
+    //     $('.article').lightGallery({ selector: '.gallery-item_dark' });
+    //     }
+    //     else{
+    //         $('.article').lightGallery({ selector: '.gallery-item' });
+    //     }
+    // }
 
     if (typeof moment === 'function') {
         $('.article-meta time').each(function() {
