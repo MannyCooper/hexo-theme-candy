@@ -1,4 +1,6 @@
-> 本项目是基于 icarus 主题的个人修改版。由于本人前端学艺不精，包含大量硬编码，如需使用请多多考虑。如对主题的修改方式有任何建议，也请尽管提出，帮助本人成长，谢谢🙏。
+> 本主题是基于 icarus 主题的个人修改版。由于本人前端学艺不精，包含大量硬编码，如需使用请多多考虑。如对主题的修改方式有任何建议，也请尽管提出，帮助本人成长，谢谢🙏。
+
+本主题支持( icarus 主题)[https://github.com/ppoffice/hexo-theme-icarus] 的所有特性，并在此基础上做出如下修改：
 - [x] Basic design
 ![overview](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/展示2.png)
 <img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/zipped_frosted_glass.gif"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-card2.gif" width="50%"><img src="https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/motion-item.gif" width="50%">
