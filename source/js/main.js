@@ -2,14 +2,12 @@
 (function($, moment, ClipboardJS, config) {
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
-        if ($(this).parent('a').length === 0) {
-            if ($(this).hasClass("fill_dark")) {
-            $(this).wrap('<a class="gallery-item dark_img" href="' + $(this).attr('src') + '"></a>');}
-            else if ($(this).hasClass("fill")) {
-            $(this).wrap('<a class="gallery-item light_img" href="' + $(this).attr('src') + '"></a>');
+        if ($(this).parent('a').length === 0) { 
+            if ($(this).parent('picture').length !== 0){
+                $(this).parent('picture').wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
             }
-            else {
-                $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
+            else{
+            $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
             }
             if (this.alt) {
                 $(this).after('<p class="has-text-centered is-size-6 caption">' + this.alt + '</p>');
@@ -19,13 +17,6 @@
     
     if (typeof $.fn.lightGallery === 'function') {
         $('.article').lightGallery({ selector: '.gallery-item' });
-        // $('.article').each(function (index) {
-        //     $('#' + this.id).lightGallery({
-        //         selector: '.gallery-item',
-        //         share: false,
-        //         galleryId: index
-        //     });
-        // })
     }
 
     if (typeof $.fn.justifiedGallery === 'function') {
@@ -34,16 +25,7 @@
         }
         $('.justified-gallery').justifiedGallery();
     }
-
-    // if (typeof $.fn.lightGallery === 'function') {
-    //     if ($(this).hasClass("fill_dark")) {
-    //     $('.article').lightGallery({ selector: '.gallery-item_dark' });
-    //     }
-    //     else{
-    //         $('.article').lightGallery({ selector: '.gallery-item' });
-    //     }
-    // }
-
+    
     if (typeof moment === 'function') {
         $('.article-meta time').each(function() {
             $(this).text(moment($(this).attr('datetime')).fromNow());
