@@ -16,4 +16,3 @@
 ![](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/code-block.png)
 - [ ] Improve Markdown style
 - [ ] Better image lazy load
-- [ ] Detail fix
