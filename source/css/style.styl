@@ -156,18 +156,25 @@ article.media .image img
 .gallery-item img
     border-radius: $radius
 
-.order-2 .controller ~ .card .article .content .message.message-immersive
-    margin: 0 -1rem 1.5rem -1rem !important
+// .order-2 .controller ~ .card .article .content .message.message-immersive
+//     margin: 0 -1rem 1.5rem -1rem !important
 
 .message.message-immersive
     border-radius: $radius_small !important
-    margin: 0 -1rem 0rem -1rem !important
+    // margin: 0 -1rem 0rem -1rem !important
+    margin: 0 !important
 
-.message.is-info
+.message
     border-radius: $radius_small !important
     
 .message-header
     border-radius: $radius_small $radius_small 0 0 !important
+
+.message-body
+    border-radius: $radius_small !important
+
+.message.is-info .message-header + .message-body
+    padding: 0em 1.5em 1em !important
 
 // Font
 .title.is-3
@@ -288,9 +295,6 @@ article.media .image img
 
 .cc-window
     border-radius: $radius
-
-.message-body
-    padding: 0em 1.5em 1em !important
 
 .content p
     line-height: 1.8
