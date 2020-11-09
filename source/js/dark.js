@@ -66,7 +66,13 @@
         cloned.setAttribute('data-cloned-theme', colorScheme);
         cloned.setAttribute('class', 'lg_img');
         el.parentNode.prepend(cloned);
-        el.parentNode.parentNode.setAttribute('href',cloned.srcset);
+
+        var checkExist = setInterval(function() {
+            if (el.parentNode.parentNode.classList.value === 'gallery-item') {
+                el.parentNode.parentNode.setAttribute('href',cloned.srcset);
+               clearInterval(checkExist);
+            }
+         }, 100);
         });
         }
         }

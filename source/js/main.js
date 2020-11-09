@@ -4,7 +4,8 @@
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) { 
             if ($(this).parent('picture').length !== 0){
-                $(this).parent('picture').wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
+                // $(this).parent('picture').wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
+                $(this).parent('picture').wrap('<a class="gallery-item"></a>');
             }
             else{
             $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
