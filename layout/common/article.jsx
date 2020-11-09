@@ -44,8 +44,8 @@ module.exports = class extends Component {
                     </span>}
                 </div> : null}
                 {/* Metadata */}
-                <a class="card-link" href={index ? url_for(page.link || page.path):null}>
-                <object class="card-object">
+                {/* <a class="card-link" href={index ? url_for(page.link || page.path):null}> */}
+                {/* <object class="card-object"> */}
                 <article class={`card-content article${'direction' in page ? ' ' + page.direction : ''}`} role="article">
                     {page.layout !== 'page' ? <div class="article-meta is-size-7 is-uppercase level is-mobile">
                         <div class="level-left">
@@ -112,8 +112,8 @@ module.exports = class extends Component {
                     {/* Share button */}
                     {!index ? <Share config={config} page={page} helper={helper} /> : null}
                 </article>
-                </object>
-                </a>
+                {/* </object> */}
+                {/* </a> */}
             </div>
             {/* Donate button */}
             {!index ? <Donates config={config} helper={helper} /> : null}

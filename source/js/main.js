@@ -146,5 +146,11 @@
         if ($(this).parent().is("pre")) {
         $(this).before("<p class='code-type'>"+ $(this).attr('class').replace('hljs ','') +"</p>")}
     });
+
+    // Add link
+    if ($('.controller').length === 0){
+    $(".card-content.article").each(function(){
+        $(this).wrap('<a class="card-link" href="' + $(this).find('h1 a').attr('href') + '"></a>');
+    })}
     
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
