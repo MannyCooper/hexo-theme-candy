@@ -9,8 +9,8 @@
 $radius = 25px
 $radius_small = 15px
 // Font
-$family-sans-serif ?= "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-$family-code ?= SF Mono,Meno,monospace
+$family-sans-serif = "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
+$family-code = SF Mono,Meno,monospace
 
 // Color
 $blue = rgb(0,122,255)
@@ -81,6 +81,13 @@ pre
     padding-right: 24px !important
     padding-top: 20px !important
 
+.content pre
+    white-space: pre-wrap !important       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap  /* Mozilla, since 1999 */
+    white-space: -pre-wrap      /* Opera 4-6 */
+    white-space: -o-pre-wrap    /* Opera 7 */
+    word-wrap: break-word       /* Internet Explorer 5.5+ */
+
 figure.highlight figcaption,
 figure.highlight .gutter
     background: $light-gray6
@@ -103,7 +110,7 @@ pre code
 
 .code-type
     position: absolute
-    margin-top: -10px
+    margin-top: -15px
     right:3.9em
     font-size: .75rem
     color: darkgrey
@@ -259,14 +266,14 @@ article.media .image img
 
 // Fix footpoint redirection position
 :target::before 
-  content: ""
-  display: block
-  height: 5.25rem
-  margin: -5.25rem 0 0
-  padding-top: 73px
+    content: ""
+    display: block
+    height: 5.25rem
+    margin: -5.25rem 0 0
+    padding-top: 73px
 
 .footnote-ref a:target::before 
-  display: inline-block !important
+    display: inline-block !important
 
 // Image gallery
 .lg-backdrop.in
