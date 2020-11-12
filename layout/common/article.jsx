@@ -29,8 +29,6 @@ module.exports = class extends Component {
         const cover_dark = page.cover_dark ? url_for(page.cover_dark) : cover;
 
         return <Fragment>
-            {/* Add .controller to invalidate the motion on the article page */}
-            {!index ? <div class="controller"></div>: null}
             {/* Main content */}
             <div class="card">
                 {/* Thumbnail */}

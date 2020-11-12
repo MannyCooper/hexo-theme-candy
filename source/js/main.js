@@ -149,7 +149,7 @@
     });
 
     // Add link
-    if ($('.controller').length === 0){
+    if ($('.article-licensing.box').length === 0){
     $(".card-content.article").each(function(){
         $(this).wrap('<a class="card-link" href="' + $(this).find('h1 a').attr('href') + '"></a>');
     })}
