@@ -29,6 +29,8 @@ module.exports = class extends Component {
         const cover_dark = page.cover_dark ? url_for(page.cover_dark) : cover;
 
         return <Fragment>
+            {/* Add .controller to invalidate the motion on the article page */}
+            {!index ? <div class="controller"></div>: null}
             {/* Main content */}
             <div class="card">
                 {/* Thumbnail */}
@@ -42,7 +44,6 @@ module.exports = class extends Component {
                     </span>}
                 </div> : null}
                 {/* Metadata */}
-                {/* <a class="card-link" href={index ? url_for(page.link || page.path):null}> */}
                 {/* <object class="card-object"> */}
                 <article class={`card-content article${'direction' in page ? ' ' + page.direction : ''}`} role="article">
                     {page.layout !== 'page' ? <div class="article-meta is-size-7 is-uppercase level is-mobile">
