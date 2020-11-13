@@ -161,7 +161,7 @@ article.media .image img
     border-radius: $radius_small
 
 .gallery-item img
-    border-radius: $radius
+    border-radius: $radius_small
 
 // .order-2 .controller ~ .card .article .content .message.message-immersive
 //     margin: 0 -1rem 1.5rem -1rem !important
@@ -299,6 +299,25 @@ article.media .image img
         padding: 1.5rem 0.5rem !important
         .is-size-4-mobile
             font-size: 2rem !important
+        .columns
+            margin-left: -0.45rem
+            margin-right: -0.45rem
+            margin-top: -0.55rem
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
+    font-weight: bold !important
+
+@media screen and (min-width: 1088px)
+    .container
+        max-width: 1088px !important
+
+@media screen and (min-width: 1280px)
+    .container
+        max-width: 1280px !important
+
+@media screen and (min-width: 1472px)
+    .container
+        max-width: 1472px !important
 
 .cc-window
     border-radius: $radius
@@ -306,24 +325,6 @@ article.media .image img
 .content p
     line-height: 1.8
     // color: #cbcbcb
-
-@media screen and (min-width: 1088px) {
-  .container {
-    max-width: 1152px !important
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1368px !important
-  }
-}
-
-@media screen and (min-width: 1472px) {
-  .container {
-    max-width: 1553px !important
-  }
-}
 
 /* Motion Design
 ---------------------------------------------------------------- */
