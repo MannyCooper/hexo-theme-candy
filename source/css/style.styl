@@ -368,18 +368,18 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
     transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
 
 // Card
-.order-2 > :not(.controller ~ .card):hover
+.order-2 .card:hover
     transform: translateY(-5px)
     box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
     -webkit-transform: translateY(-5px)
     -webkit-box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
 
-// // Add .controller (article.jsx) to invalidate the motion on the article page
-// .order-2 .controller ~ .card:hover
-//     transform: none
-//     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
-//     -webkit-transform: none
-//     -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+// Add .controller (article.jsx) to invalidate the motion on the article page
+.order-2 .controller ~ .card:hover
+    transform: none
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+    -webkit-transform: none
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
 
 .card
     transition: opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.6s !important
