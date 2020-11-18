@@ -196,7 +196,7 @@ article.media .image img
     margin-bottom: 5px
 
 .menu-list a.is-active
-    font-weight: 500
+    font-weight: 500 
 
 .order-2 .card-content
     padding: 2rem;
@@ -266,16 +266,27 @@ article.media .image img
 // Fix footpoint redirection position
 :target::before 
     content: ""
+    display: inline-block
+    padding-top: 73px
+    margin-top: -73px
+    // position: relative;
+    // height: 5.75rem
+    // margin: -5.75rem 0 0
+    // padding-top: 80px
+
+.footnote-item::before 
     display: block
-    height: 5.75rem
-    margin: -5.75rem 0 0
-    padding-top: 80px
+    margin-bottom: -25px
+    padding-top: 55px
+    margin-top: -55px
+    // padding-top: 55px
+    // margin-top: -55px
 
-.footnotes .footnotes-list p
-    line-height: inherit
+// .footnote-item p
+//     display: inline
 
-.footnote-ref a:target::before 
-    display: inline-block !important
+// .footnote-ref a:target::before 
+//     display: inline-block !important
 
 // Image gallery
 .lg-backdrop.in
@@ -423,7 +434,8 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 .title:not(:last-child),
 .subtitle:not(:last-child),
 .block:not(:last-child),
-.highlight:not(:last-child)
+.highlight:not(:last-child),
+details,summary
     margin-bottom: 1rem;
 
 @import 'dark'
