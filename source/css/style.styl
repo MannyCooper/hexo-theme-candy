@@ -145,7 +145,7 @@ pre .caption
 
 .card-link
     color: inherit
-    cursor: pointer
+    // cursor: pointer
 
 form .control .button
     background-color: $primary !important
@@ -154,8 +154,10 @@ form .control .button
     box-shadow: none !important
 
 // All card radius
-.widget .menu-list .level
-    border-radius: $radius
+// .widget .menu-list .level
+//     border-radius: $radius
+.menu-list a.is-active
+    border-radius: 15px
 
 article.media .image img
     border-radius: $radius_small
@@ -211,20 +213,17 @@ article.media .image img
     // padding: 6.25em 1.5rem
     margin-top: 52px
 
-.navbar,
-.navbar-menu
+.navbar
     -webkit-backdrop-filter: saturate(180%) blur(20px)
     backdrop-filter: saturate(180%) blur(20px)
-
-.navbar
     background-color: rgba(255,255,255,0.7) !important
 
 .navbar-main .navbar-menu
-    background: transparent
+    background-color: transparent
 
 .navbar-item
     margin: 4px !important
-    padding: 9.5px !important
+    padding: 8.5px !important
 
 // Comment
 .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover
@@ -268,9 +267,12 @@ article.media .image img
 :target::before 
     content: ""
     display: block
-    height: 5.25rem
+    height: 5.75rem
     margin: -5.75rem 0 0
-    padding-top: 73px
+    padding-top: 80px
+
+.footnotes .footnotes-list p
+    line-height: inherit
 
 .footnote-ref a:target::before 
     display: inline-block !important
@@ -335,7 +337,7 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 
 // Widget item hover radius
 .menu-list a:hover
-    border-radius: $radius
+    border-radius: $radius_small
 
 // Card Image
 .card:hover
