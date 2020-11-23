@@ -31,8 +31,8 @@ article:
     comments: '评论'
     read_time: '%s读完'
     word_count:
-        one: '大约%d个字'
-        other: '大约%d个字'
+        one: '大约 %d 个字'
+        other: '大约 %d 个字'
     licensing:
         author: '作者'
         created_at: '发布于'
@@ -48,8 +48,8 @@ donate:
     buymeacoffee: '送我杯咖啡'
 plugin:
     backtotop: '回到顶端'
-    visit_count: '%s次访问'
-    visitor_count: '共%s个访客'
+    visit_count: '%s 次访问'
+    visitor_count: '共 %s 个访客'
     cookie_consent:
       message: 此网站使用Cookie来改善您的体验。
       dismiss: 知道了！
