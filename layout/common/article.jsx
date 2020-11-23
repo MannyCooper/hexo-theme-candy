@@ -77,9 +77,12 @@ module.exports = class extends Component {
                                 {(() => {
                                     const words = getWordCount(page._content);
                                     const time = moment.duration((words / 150.0) * 60, 'seconds');
-                                    // return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())} (${_p('article.word_count', words)})`;
-                                    return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())}`;
-
+                                    if (index){
+                                        return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())}`;
+                                    }
+                                    else{
+                                        return `${_p('article.read_time', time.locale(index ? indexLaunguage : language).humanize())} (${_p('article.word_count', words)})`;
+                                    }
                                 })()}
                             </span> : null}
                             {/* Visitor counter */}
