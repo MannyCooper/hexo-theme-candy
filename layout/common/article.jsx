@@ -52,10 +52,10 @@ module.exports = class extends Component {
                             {page.date && <span class="level-item" dangerouslySetInnerHTML={{
                                 __html: '<i class="far fa-calendar-alt">&nbsp;&nbsp;</i>' + _p('article.created_at', `<time dateTime="${date_xml(page.date)}" title="${date_xml(page.date)}">${date(page.date)}</time>`)
                             }}></span>}
-                            {/* Last Update Date */}
+                            {/* Last Update Date
                             {page.updated && <span class="level-item" dangerouslySetInnerHTML={{
                                 __html: _p('article.updated_at', `<time dateTime="${date_xml(page.updated)}" title="${date_xml(page.updated)}">${date(page.updated)}</time>`)
-                            }}></span>}
+                            }}></span>} */}
                             {/* author */}
                             {page.author ? <span class="level-item"> {page.author} </span> : null}
                             {/* Categories */}
@@ -99,7 +99,11 @@ module.exports = class extends Component {
                     {/* Licensing block */}
                     {!index && article && article.licenses && Object.keys(article.licenses)
                         ? <ArticleLicensing.Cacheable page={page} config={config} helper={helper} /> : null}
-                    {/* Tags */}
+                    {/* Last Update Date */}
+                    {!index && page.updated && <span class="article-tags is-size-7 last_update" dangerouslySetInnerHTML={{
+                    __html: _p('article.updated_at', `<i class="fas fa-wrench">&nbsp;&nbsp;</i><time dateTime="${date_xml(page.updated)}" title="${date_xml(page.updated)}">${date(page.updated)}</time>`)
+                    }}></span>}
+                    {/* Tags */} 
                     {!index && page.tags && page.tags.length ? <div class="article-tags is-size-7 mb-4">
                     <i class="far fa-tag">&nbsp;&nbsp;</i>
                         {page.tags.map(tag => {
