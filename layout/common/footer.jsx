@@ -39,9 +39,9 @@ class Footer extends Component {
                             <a href="https://github.com/MannyCooper/hexo-theme-candy" target="_blank" rel="noopener">Candy</a>
                             <br />
                             <i class="fas fa-globe-asia" style=""></i>
-                            <a href="http://beian.miit.gov.cn"> 苏ICP备2020060340号 </a>
+                            <a href="http://beian.miit.gov.cn"> 苏ICP备 2020060340 号 </a>
                             <br />
-                            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011202000528"><img src="/img/beian.png" style="height: 14px;margin-left: -1px;margin-right: -1px;margin-top: 1.2px;"/> 苏公网安备 32011202000528号</a>
+                            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011202000528"><img src="/img/beian.png" style="height: 14px;margin-left: -1px;margin-right: -1px;margin-top: 1.2px;"/> 苏公网安备 32011202000528 号</a>
                             {showVisitorCounter ? <br /> : null}
                             {showVisitorCounter ? <span id="busuanzi_container_site_uv"
                                 dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
