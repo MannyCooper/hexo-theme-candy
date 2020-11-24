@@ -1,0 +1,329 @@
+# Version of the configuration file
+version: 4.0.0
+# Icarus theme variant, can be "default" or "cyberpunk"
+variant: default
+# Path or URL to the website's logo
+logo: /img/logo_small.png
+# Page metadata configurations
+head:
+  # URL or path to the website's icon
+  favicon: /img/favicon-32x32.png
+  # Open Graph metadata
+  # https://hexo.io/docs/helpers.html#open-graph
+  open_graph:
+    # Page title (og:title) (optional)
+    # You should leave this blank for most of the time
+    title:
+    # Page type (og:type) (optional)
+    # You should leave this blank for most of the time
+    type: blog
+    # Page URL (og:url) (optional)
+    # You should leave this blank for most of the time
+    url:
+    # Page cover (og:image) (optional)
+    # You should leave this blank for most of the time
+    image:
+    # Site name (og:site_name) (optional)
+    # You should leave this blank for most of the time
+    site_name:
+    # Page author (article:author) (optional)
+    # You should leave this blank for most of the time
+    author:
+    # Page description (og:description) (optional)
+    # You should leave this blank for most of the time
+    description:
+    # Twitter card type (twitter:card)
+    twitter_card:
+    # Twitter ID (twitter:creator)
+    twitter_id:
+    # Twitter Site (twitter:site)
+    twitter_site:
+    # Google+ profile link (deprecated)
+    google_plus:
+    # Facebook admin ID
+    fb_admins:
+    # Facebook App ID
+    fb_app_id:
+  # Structured data of the page
+  # https://developers.google.com/search/docs/guides/intro-structured-data
+  structured_data:
+    # Page title (optional)
+    # You should leave this blank for most of the time
+    title:
+    # Page description (optional)
+    # You should leave this blank for most of the time
+    description:
+    # Page URL (optional)
+    # You should leave this blank for most of the time
+    url:
+    # Page author (article:author) (optional)
+    # You should leave this blank for most of the time
+    author:
+    # Page images (optional)
+    # You should leave this blank for most of the time
+    image:
+  # Additional HTML meta tags in an array
+  meta:
+    # Meta tag specified in <attribute>=<value> style
+    # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
+    - ""
+  # URL or path to the website's RSS atom.xml
+  rss: "/atom.xml"
+# Page top navigation bar configurations
+navbar:
+  # Naviagtion menu items
+  menu:
+    首页: /
+    存档: /archives
+    分类: /categories
+    标签: /tags
+    # 踩坑: /errors
+    关于: /about
+  # Links to be shown on the right of the navigation bar
+  links:
+#    Download on GitHub:
+#      icon: fas fa-dna
+#      url: "https://github.com/ppoffice/hexo-theme-icarus"
+# Page footer configurations
+footer:
+  # Links to be shown on the right of the footer section
+  links:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: "https://creativecommons.org/"
+    Attribution 4.0 International:
+      icon: fab fa-creative-commons-by
+      url: "https://creativecommons.org/licenses/by/4.0/"
+    Deployed on Vercel:
+      icon: fas fa-caret-square-up
+      url: "https://vercel.com/"
+    Deployed on Alibaba Cloud:
+      icon: fas fa-server
+      url: "https://www.aliyun.com"
+
+# Article related configurations
+article:
+  # Code highlight settings
+  highlight:
+    # Code highlight themes
+    # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+    theme: atom-one-light
+    # Show copy code button
+    clipboard: true
+    # Default folding status of the code blocks. Can be "", "folded", "unfolded"
+    fold: ""
+  # Whether to show estimated article reading time
+  readtime: true
+  # Article licensing block
+  licenses:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: "https://creativecommons.org/"
+    Attribution:
+      icon: fab fa-creative-commons-by
+      url: "https://creativecommons.org/licenses/by/4.0/"
+    Noncommercial:
+      icon: fab fa-creative-commons-nc
+      url: "https://creativecommons.org/licenses/by-nc/4.0/"
+# Search plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+search:
+  type: insight
+# Comment plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+comment:
+  type: twikoo
+  envId: twikoo-7gjtx7whfd732c11
+  jsUrl: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
+  # Disqus shortname
+#  shortname: ""
+# Donate plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
+donates:
+  # # "Afdian.net" donate button configurations
+  # -
+  #     type: afdian
+  #     # URL to the "Afdian.net" personal page
+  #     url: ''
+  # Alipay donate button configurations
+  - type: alipay
+    # Alipay qrcode image URL
+    qrcode: /img/alipay.JPG
+  # # "Buy me a coffee" donate button configurations
+  # -
+  #     type: buymeacoffee
+  #     # URL to the "Buy me a coffee" page
+  #     url: ''
+  # # Patreon donate button configurations
+  # -
+  #     type: patreon
+  #     # URL to the Patreon page
+  #     url: ''
+  # Paypal donate button configurations
+  - type: paypal
+    # Paypal business ID or email address
+    business: "541297173@qq.com"
+    # Currency code
+    currency_code: USD
+  # Wechat donate button configurations
+  - type: wechat
+    # Wechat qrcode image URL
+    qrcode: /img/wechat.JPG
+# Share plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
+share:
+  type: sharethis
+  # URL to the ShareThis share plugin script
+  install_url: "https://platform-api.sharethis.com/js/sharethis.js#property=5f60d4110658220012f2d898&product=inline-share-buttons"
+# Sidebar configurations.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+  # Left sidebar configurations
+  left:
+    # Whether the sidebar sticks to the top when page scrolls
+    sticky: false
+  # Right sidebar configurations
+  right:
+    # Whether the sidebar sticks to the top when page scrolls
+    sticky: false
+# Sidebar widget configurations
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+  # Profile widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: profile
+    # Author name
+    author: 异次元de机智君💯
+    # Author title
+    author_title: 💻｜🎨｜🎮｜⚡️
+    # Author's current location
+    location: 南京/Seattle
+    # URL or path to the avatar image
+    avatar: /img/portrait.PNG
+    # Whether show the rounded avatar image
+    avatar_rounded: true
+    # Email address for the Gravatar
+    gravatar:
+    # URL or path for the follow button
+    follow_link: "https://weibo.com/6583804362"
+    # Links to be shown on the bottom of the profile widget
+    social_links:
+      Github:
+        icon: fab fa-github
+        url: "https://github.com/mannycooper"
+      # Facebook:
+      #   icon: fab fa-facebook
+      #   url: "https://facebook.com"
+      Twitter:
+        icon: fab fa-twitter
+        url: "https://twitter.com"
+      站酷:
+        icon: fab fa-dribbble
+        url: "https://www.zcool.com.cn/u/15715679"
+      RSS:
+        icon: fas fa-rss
+        url: /atom.xml
+  # Recommendation links widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: links
+    # Names and URLs of the sites
+    links:
+      rtz的博客: "https://www.ruitz.cn"
+    # Google FeedBurner email subscription widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: subscribe_email
+    # Hint text under the email input
+    description: Powered by Google FeedBurner
+    # Feedburner ID
+    feedburner_id: "anzifan"
+    # Table of contents widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: toc
+    # Whether to show the index of each heading
+    index: true
+    # # Whether to collapse sub-headings when they are out-of-view
+    # collapsed: false # 设置为false时强制展开所有标题
+    # # Maximum level of headings to show (1-6)
+    # depth: 2 # 最多展示的标题级数（1-6）
+  # Recent posts widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: right
+    type: recent_posts
+  # Categories widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: right
+    type: categories
+  # Tags widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: right
+    type: tags
+  # Archives widget configurations
+  - # Where should the widget be placed, left sidebar or right sidebar
+    position: right
+    type: archives
+  # Google AdSense unit configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: adsense
+  #   # AdSense client ID
+  #   client_id: ""
+  #   # AdSense AD unit ID
+  #   slot_id: ""
+# Plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
+plugins:
+  # Enable page startup animations
+  animejs: true
+  # Show the "back to top" button
+  back_to_top: true
+  # Baidu Analytics plugin settings
+  # https://tongji.baidu.com
+  baidu_analytics:
+    # Baidu Analytics tracking ID
+    tracking_id: cba64d0811724e0e4763bd8a13059f1a
+  # BuSuanZi site/page view counter
+  # https://busuanzi.ibruce.info
+  busuanzi: true
+  # CNZZ statistics
+  # https://www.umeng.com/web
+  cnzz:
+    # CNZZ tracker id
+    id:
+    # CNZZ website id
+    web_id:
+  # Enable the lightGallery and Justified Gallery plugins
+  gallery: true
+  # Google Analytics plugin settings
+  # https://analytics.google.com
+  google_analytics:
+    # Google Analytics tracking ID
+    tracking_id: UA-168668701-2
+  # Hotjar user feedback plugin
+  # https://www.hotjar.com/
+  hotjar:
+    # Hotjar site id
+    site_id:
+  # Enable the KaTeX math typesetting supprot
+  # https://katex.org/
+  katex: false
+  # Enable the MathJax math typesetting support
+  # https://www.mathjax.org/
+  mathjax: true
+  # Enable the Outdated Browser plugin
+  # http://outdatedbrowser.com/
+  outdated_browser: true
+  # Show a progress bar at top of the page on page loading
+  progressbar: true
+# CDN provider settings
+# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+  # Name or URL template of the JavaScript and/or stylesheet CDN provider
+  cdn: jsdelivr
+  # Name or URL template of the webfont CDN provider
+  fontcdn: loli
+  # Name or URL of the fontawesome icon font CDN provider
+  iconcdn: loli
