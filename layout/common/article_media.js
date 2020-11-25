@@ -89,9 +89,9 @@ module.exports = /*#__PURE__*/function (_Component) {
         "href": url
       }), 2) : null, (0, _inferno.createVNode)(1, "div", "media-content", [(0, _inferno.createVNode)(1, "p", "date", (0, _inferno.createVNode)(1, "time", null, date, 0, {
         "dateTime": dateXml
-      }), 2), (0, _inferno.createVNode)(1, "p", "title", (0, _inferno.createVNode)(1, "a", null, title, 0, {
+      }), 2), categoryTags.length ? (0, _inferno.createVNode)(1, "p", "categories", categoryTags, 0) : null, (0, _inferno.createVNode)(1, "p", "title", (0, _inferno.createVNode)(1, "a", null, title, 0, {
         "href": url
-      }), 2), categoryTags.length ? (0, _inferno.createVNode)(1, "p", "categories", categoryTags, 0) : null], 0)], 0);
+      }), 2)], 0)], 0);
     }
   }]);
 
