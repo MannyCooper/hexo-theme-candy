@@ -9,8 +9,17 @@
 $radius = 25px
 $radius_small = 15px
 // Font
-$family-sans-serif = "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-$family-code = SF Mono,Meno,monospace
+// $family-sans-serif = "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
+// $family-sans-serif = Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Source Han Sans SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji
+$family-sans-serif = -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Microsoft YaHei,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Helvetica Neue,Arial,sans-serif
+// $family-code = Consolas,Monaco,SFMono-Regular,Andale Mono,Liberation Mono,Ubuntu Mono,Menlo,monospace
+$family-code = Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace
+html
+    font-size: 15px !important
+code
+    font-size: 13.4px !important
+h1, h2, h3, h4, h5
+    font-family: open sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Source Han Sans SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji
 
 // Color
 $blue = rgb(0,122,255)
@@ -64,6 +73,25 @@ $button-active-background-color = $red
 $button-active-border-color = $red
 $button-active-color = white
 
+.article-meta .level-left
+    // .level-item:nth-child(1)
+    //     color: $red
+    // .level-item:nth-child(2)
+    //     color: $orange
+    // .level-item:nth-child(3)
+    //     color: $blue
+    .fa-calendar-alt
+        color: $red
+    .fa-folder-open
+        color: $orange
+    .fa-clock
+        color: $blue
+    .fa-eye
+        color: $green
+
+.content
+    text-align: justify
+
 .widget .tags .tag:first-child
     background: $light-gray6 !important
     color: $dark-gray4 !important
@@ -109,11 +137,17 @@ pre code
     background-color: transparent !important
 
 .code-type
-    position: absolute
+    // position: absolute
+    position: relative
+    float: right
+    right: -1.1em
     margin-top: -15px
-    right:3.9em
-    font-size: .75rem
+    // right:3.9em
+    // font-size: .75rem
     color: darkgrey
+    font-size: 90%;
+    font-weight: bolder;
+    margin-bottom: -8px !important;
 
 pre .caption
     background-color: $light-gray6
@@ -127,14 +161,38 @@ pre .caption
     padding-top: 2px
     padding-bottom: 2px
     font-weight: 500;
-    font-family: 'Source Code Pro', monospace, 'Microsoft YaHei';
+    // font-family: 'Source Code Pro', monospace, 'Microsoft YaHei';
+    font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace
 
 
 .content blockquote
     background-color: #fafafa !important
-    border-left: $radius_small solid $light-gray6 !important
+    // border-left: $radius_small solid $light-gray6 !important
+    border-left: none !important
     border-radius: $radius_small
     box-shadow: 1px 5px 10px 0 rgba(0,0,0,0.05);
+
+.content blockquote:before{
+    content:"“";
+    float: left;
+    position: relative;
+    font-size: 500%;
+    top: 11px;
+    margin-left: -44px;
+    color: #ff375f;
+    line-height: 0px;
+}
+
+.content blockquote:after{
+    content: "”";
+    float: right;
+    position: relative;
+    font-size: 500%;
+    top: 34px;
+    margin-right: -44px;
+    color: #ff375f;
+    line-height: 0px;
+}
 
 .caption
     color: #7a7a7a
@@ -199,7 +257,7 @@ article.media .image img
     font-weight: 500 
 
 .order-2 .card-content
-    padding: 2rem;
+    padding: 1.7rem;
 
 // Navbar float
 .navbar-main
@@ -341,11 +399,16 @@ article.media .image img
     line-height: 1.8
     // color: #cbcbcb
 
-.content blockquote
-    font-size: small
+// .content blockquote
+    // font-size: small
 
 .last_update
     float: right
+    .fas.fa-wrench
+        color: silver
+
+.article-tags .far.fa-tag
+    color: $pink
 
 .el-loading-mask
     background-color: transparent !important
@@ -356,25 +419,9 @@ article.media .image img
 .tk-admin.__show
     border-radius: 12px
 
-// .content blockquote:before{
-//     content:"“";
-//     float: left;
-//     position: relative;
-//     font-size: 500%;
-//     margin-top: -48px;
-//     margin-left: -54px;
-//     color: #ff375f;
-// }
+.tk-icon svg
+    fill: silver !important
 
-.content blockquote:after{
-    content: "”";
-    float: right;
-    position: relative;
-    font-size: 550%;
-    margin-top: -30px;
-    margin-right: -40px;
-    color: #ff375f;
-}
 .media .media-content
     .date, .categories
         display: inline !important
