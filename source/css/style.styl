@@ -11,7 +11,8 @@ $radius_small = 15px
 // Font
 // $family-sans-serif = "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
 // $family-sans-serif = Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Source Han Sans SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji
-$family-sans-serif = -apple-system,Arial,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Microsoft YaHei,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Helvetica Neue,sans-serif
+// $family-sans-serif = -apple-system,Arial,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Microsoft YaHei,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Helvetica Neue,sans-serif
+$family-sans-serif = Dosis,Open Sans,pingfang SC,helvetica neue,arial,hiragino sans gb,microsoft yahei ui,microsoft yahei,simsun,sans-serif
 // $family-code = Consolas,Monaco,SFMono-Regular,Andale Mono,Liberation Mono,Ubuntu Mono,Menlo,monospace
 $family-code = Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace
 html
@@ -179,7 +180,7 @@ pre .caption
     font-size: 500%;
     top: 11px;
     margin-left: -44px;
-    color: #ff375f;
+    color: $primary;
     line-height: 0px;
 }
 
@@ -190,7 +191,7 @@ pre .caption
     font-size: 500%;
     top: 34px;
     margin-right: -44px;
-    color: #ff375f;
+    color: $primary;
     line-height: 0px;
 }
 
@@ -407,7 +408,7 @@ article.media .image img
     .fas.fa-wrench
         color: silver
 
-.article-tags .far.fa-tag
+.article-tags .fas.fa-tags
     color: $pink
 
 .el-loading-mask
