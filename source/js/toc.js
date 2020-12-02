@@ -78,7 +78,11 @@
               location.hash = anchor;
             }
           });
+          // $heading.style.scrollMargin = '1em';
+          // $heading.style.marginTop = '-.8em';
+          // $heading.style.paddingTop = '.8em';
           $heading.style.scrollMargin = '3.5em';
+          // $heading.style.scrollSnapMargin = '1.5em';
         }
       }
     }
