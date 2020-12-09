@@ -85,7 +85,6 @@ $button-active-color = white
     //     color: $orange
     // .level-item:nth-child(3)
     //     color: $blue
-    .fa-calendar-alt
     // .fa-calendar-alt
     //     color: $red
     // .fa-folder-open
@@ -193,6 +192,7 @@ pre .caption
     border-left: none !important
     border-radius: $radius_small
     box-shadow: 1px 5px 10px 0 rgba(0,0,0,0.05);
+    // box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.05);
 
 .content blockquote:before{
     content:"“";
@@ -244,6 +244,9 @@ article.media .image img
 
 .gallery-item img
     border-radius: $radius_small
+
+    &.border
+        border: 1px solid rgb(241, 241, 241)
 
 // .order-2 .controller ~ .card .article .content .message.message-immersive
 //     margin: 0 -1rem 1.5rem -1rem !important
