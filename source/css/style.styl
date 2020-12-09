@@ -78,7 +78,7 @@ $button-active-background-color = $red
 $button-active-border-color = $red
 $button-active-color = white
 
-.article-meta .level-left
+// .article-meta .level-left
     // .level-item:nth-child(1)
     //     color: $red
     // .level-item:nth-child(2)
@@ -86,13 +86,30 @@ $button-active-color = white
     // .level-item:nth-child(3)
     //     color: $blue
     .fa-calendar-alt
+    // .fa-calendar-alt
+    //     color: $red
+    // .fa-folder-open
+    //     color: $orange
+    // .fa-clock
+    //     color: $blue
+    // .fa-eye
+    //     color: $green
+.article-meta .level-left
+    .level-item
+        border-radius: 10px
+        padding: 1px 8px
+    .create-data
         color: $red
-    .fa-folder-open
+        background-color: lightness($red,97%)
+    .cate
         color: $orange
-    .fa-clock
+        background-color: lightness($orange,97%)
+    .read-time
         color: $blue
-    .fa-eye
+        background-color: lightness($blue,97%)
+    .leancloud_visitors
         color: $green
+        background-color: lightness($green,97%)
 
 .content
     text-align: justify

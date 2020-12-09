@@ -49,7 +49,7 @@ module.exports = class extends Component {
                     {page.layout !== 'page' ? <div class="article-meta is-size-7 is-uppercase level is-mobile">
                         <div class="level-left">
                             {/* Creation Date */}
-                            {page.date && <span class="level-item" dangerouslySetInnerHTML={{
+                            {page.date && <span class="level-item create-data" dangerouslySetInnerHTML={{
                                 __html: '<i class="far fa-calendar-alt">&nbsp;&nbsp;</i>' + _p('article.created_at', `<time dateTime="${date_xml(page.date)}" title="${date_xml(page.date)}">${date(page.date)}</time>`)
                             }}></span>}
                             {/* Last Update Date
@@ -57,9 +57,9 @@ module.exports = class extends Component {
                                 __html: _p('article.updated_at', `<time dateTime="${date_xml(page.updated)}" title="${date_xml(page.updated)}">${date(page.updated)}</time>`)
                             }}></span>} */}
                             {/* author */}
-                            {page.author ? <span class="level-item"> {page.author} </span> : null}
+                            {page.author ? <span class="level-item auther"> {page.author} </span> : null}
                             {/* Categories */}
-                            {page.categories && page.categories.length ? <span class="level-item">
+                            {page.categories && page.categories.length ? <span class="level-item cate">
                                 <i class="far fa-folder-open">&nbsp;&nbsp;</i>
                                 {(() => {
                                     const categories = [];
@@ -73,7 +73,7 @@ module.exports = class extends Component {
                                 })()}
                             </span> : null}
                             {/* Read time */}
-                            {article && article.readtime && article.readtime === true ? <span class="level-item"><i class="far fa-clock">&nbsp;&nbsp;</i>
+                            {article && article.readtime && article.readtime === true ? <span class="level-item read-time"><i class="far fa-clock">&nbsp;&nbsp;</i>
                                 {(() => {
                                     const words = getWordCount(page._content);
                                     const time = moment.duration((words / 150.0) * 60, 'seconds');
