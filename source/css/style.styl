@@ -166,8 +166,8 @@ pre code
     // right:3.9em
     // font-size: .75rem
     color: darkgrey
-    font-size: 90%;
-    font-weight: bolder;
+    font-size: 80%;
+    // font-weight: bolder;
     margin-bottom: -8px !important;
 
 pre .caption
@@ -187,34 +187,44 @@ pre .caption
 
 
 .content blockquote
-    background-color: #fafafa !important
+    // background-color: #fafafa !important
     // border-left: $radius_small solid $light-gray6 !important
     border-left: none !important
     border-radius: $radius_small
-    box-shadow: 1px 5px 10px 0 rgba(0,0,0,0.05);
+    // box-shadow: 1px 5px 10px 0 rgba(0,0,0,0.05);
     // box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.05);
+    p
+        position: relative
+        // color: #7a7a7a
+        font-weight: 500
 
-.content blockquote:before{
-    content:"“";
-    float: left;
-    position: relative;
-    font-size: 500%;
-    top: 11px;
-    margin-left: -44px;
-    color: $primary;
-    line-height: 0px;
-}
+    &:before
+        content:"“";
+        float: left;
+        position: relative;
+        font-size: 500%;
+        top: 11px;
+        margin-left: -44px;
+        color: $primary;
+        line-height: 0px;
 
-.content blockquote:after{
-    content: "”";
-    float: right;
-    position: relative;
-    font-size: 500%;
-    top: 34px;
-    margin-right: -44px;
-    color: $primary;
-    line-height: 0px;
-}
+    &:after
+        content: "”";
+        float: right;
+        position: relative;
+        font-size: 500%;
+        top: 43px;
+        margin-right: -44px;
+        color: $primary;
+        line-height: 0px;
+    a:not(sup a)   
+        color: #7c7c7c
+        font-size: 10px;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        &:hover
+            color: black
 
 .caption
     color: #7a7a7a
