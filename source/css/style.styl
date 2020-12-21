@@ -223,7 +223,7 @@ pre .caption
         margin-right: -44px;
         color: $primary;
         line-height: 0px;
-    a:not(sup a)   
+    a
         color: #7c7c7c
         font-size: 10px;
         position: absolute;
@@ -231,6 +231,10 @@ pre .caption
         top: -15px;
         &:hover
             color: black
+    sup a
+        color: #ff2d55
+        font-size: 100%
+        position: initial
 
 .caption
     color: #7a7a7a
@@ -500,6 +504,23 @@ article.media .image img
 .num
     margin-right: 8px
     color: $pink
+
+kbd
+    // margin: 0 .1em
+    // padding: .1em .5em
+    // font-size: .8em
+    color: #242729
+    background: #fff
+    border: 1px solid #adb3b9
+    border-radius: 3px
+    box-shadow: 0 1px 0 rgba(12, 13, 14, .2), 0 0 0 2px #FFF inset
+    white-space: nowrap
+    vertical-align: middle
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 10px;
+    border-radius: 4px;
 
 /* Motion Design
 ---------------------------------------------------------------- */
