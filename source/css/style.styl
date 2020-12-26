@@ -264,7 +264,9 @@ article.media .image img
 
 .gallery-item img
     border-radius: $radius_small
-
+    margin-left: auto
+    margin-right: auto
+    display: block
     &.border
         border: 1px solid rgb(241, 241, 241)
 
@@ -621,5 +623,9 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 details,summary
     margin-bottom: 1rem !important;
 
+.content p:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content ul:not(:last-child), .content blockquote:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child)
+    margin-bottom: 1.4em !important;
+
 @import 'dark'
 @import 'info_card'
+@import 'other'
