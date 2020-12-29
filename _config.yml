@@ -215,9 +215,9 @@ widgets:
       # Facebook:
       #   icon: fab fa-facebook
       #   url: "https://facebook.com"
-      Twitter:
-        icon: fab fa-twitter
-        url: "https://twitter.com"
+      少数派:
+        icon: /img/sspai.svg
+        url: "https://sspai.com/u/mannycooper/updates"
       站酷:
         icon: fab fa-dribbble
         url: "https://www.zcool.com.cn/u/15715679"
