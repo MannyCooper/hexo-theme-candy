@@ -115,3 +115,6 @@ yarn.lock
 *.iws
 *.iml
 .DS_Store
+source/css/test.styl
+source/js/dark copy.js
+source/css/config.codekit3
