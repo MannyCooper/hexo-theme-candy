@@ -118,3 +118,4 @@ yarn.lock
 source/css/test.styl
 source/js/dark copy.js
 source/css/config.codekit3
+_config.yml
