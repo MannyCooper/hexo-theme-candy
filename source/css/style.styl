@@ -223,7 +223,7 @@ pre .caption
         margin-right: -44px;
         color: $primary;
         line-height: 0px;
-    a
+    .quote_src
         color: #7c7c7c
         font-size: 10px;
         position: absolute;
@@ -235,6 +235,10 @@ pre .caption
         color: #ff2d55
         font-size: 100%
         position: initial
+    ol
+        margin-top: 0
+    code
+        background-color: white
 
 .caption
     color: #7a7a7a
@@ -267,6 +271,7 @@ article.media .image img
     margin-left: auto
     margin-right: auto
     display: block
+    margin-bottom: 20px
     &.border
         border: 1px solid rgb(241, 241, 241)
 
@@ -625,12 +630,21 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
 .subtitle:not(:last-child),
 .block:not(:last-child),
 .highlight:not(:last-child),
-details,summary
+details:not(:last-child),summary:not(:last-child)
     margin-bottom: 1rem !important;
 
-.content p:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content ul:not(:last-child), .content blockquote:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child)
+.content p:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content ul:not(:last-child), .content blockquote:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), h3
     margin-bottom: 1.4em !important;
 
+.controller + .card article h1
+    line-height: 42px !important
+    margin-bottom: 30px !important
+
+h2
+    margin-top: 47px !important
+    margin-bottom: 26px !important
+    line-height: 140% !important
+    
 @import 'dark'
 @import 'info_card'
 @import 'other'
