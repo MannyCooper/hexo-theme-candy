@@ -34,8 +34,8 @@ class Footer extends Component {
                             {footerLogo}
                         </a>
                         <p class="is-size-7">
-                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;with&nbsp;
+                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${"2020-" + siteYear} ${author || siteTitle}` }}></span>
+                            <br />Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;with&nbsp;
                             <a href="https://github.com/MannyCooper/hexo-theme-candy" target="_blank" rel="noopener">Candy</a>
                             <br />
                             <i class="fas fa-globe-asia" style=""></i>
