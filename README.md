@@ -17,4 +17,4 @@
 - [x] Improve Code Highlight
 ![](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/code-block.png)
 - [ ] Better image lazy load
-- [ ] Fix lightgallery
+- [ ] Fix Justified Gallery
