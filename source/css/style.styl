@@ -13,6 +13,17 @@ $radius_small = 15px
 // $family-sans-serif = Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Source Han Sans SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji
 // $family-sans-serif = -apple-system,Arial,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Microsoft YaHei,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Helvetica Neue,sans-serif
 $family-sans-serif = Dosis,Open Sans,pingfang SC,helvetica neue,arial,hiragino sans gb,microsoft yahei ui,microsoft yahei,simsun,sans-serif
+
+// html{
+// --base-font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Source Han Sans SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+// --title-font-family: Rubik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Source Han Sans SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji;}
+
+// h1, h2, h3, h4, h5
+//     font-family: var(--title-font-family) !important
+
+// body, p
+//     font-family: var(--base-font-family) !important
+
 // $family-code = Consolas,Monaco,SFMono-Regular,Andale Mono,Liberation Mono,Ubuntu Mono,Menlo,monospace
 $family-code = Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace
 // html
@@ -24,8 +35,8 @@ h1, h2, h3, h4, h5
     text-align: left
 .card-content .menu-list .level.is-mobile .level-item:last-child
     word-break:break-all
-article.article .content
-    font-size: 16px !important
+// article.article .content
+//     font-size: 16px !important
 // Color
 $blue = rgb(0,122,255)
 $green = rgb(52,199,89)
@@ -77,6 +88,10 @@ $button-hover-color = white
 $button-active-background-color = $red
 $button-active-border-color = $red
 $button-active-color = white
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, .tag, input, code, .message,span,.caption,.box
+    -webkit-transition: background-color 0.3s, border-color 0.3s
+    transition: background-color 0.3s,border-color 0.3s
 
 .article-meta .level-left
     // .level-item:nth-child(1)
@@ -275,6 +290,9 @@ article.media .image img
     &.border
         border: 1px solid rgb(241, 241, 241)
 
+.image.is-7by3
+    padding-top: 45% !important;
+
 // .order-2 .controller ~ .card .article .content .message.message-immersive
 //     margin: 0 -1rem 1.5rem -1rem !important
 
@@ -427,13 +445,14 @@ article.media .image img
 .article-tags.is-size-7.mb-4
     padding-left: 20px;
 
+// Article 首页 content
 
 // Responsive
 @media screen and (max-width: 768px)
     .section
         padding: 1.5rem 0.5rem !important
-        .is-size-4-mobile
-            font-size: 2rem !important
+        // .title.is-size-4-mobile
+            // font-size: 2rem !important
         .columns
             margin-left: -0.45rem
             margin-right: -0.45rem
@@ -570,9 +589,9 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
     transform: scale(1.03)
 
 .tags.has-addons, .menu-list .level.is-mobile
-    -webkit-transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    -webkit-transition: background-color 0.3s,opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
     -webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
-    transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    transition: background-color 0.3s,opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
     transform 400ms cubic-bezier(0.4, 0, 0.25, 1)
 
 // Card
@@ -590,7 +609,7 @@ a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-lin
     -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
 
 .card
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.6s !important
+    transition: background-color .3s,opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.6s !important
 
 .card-link:hover
     color: inherit !important
