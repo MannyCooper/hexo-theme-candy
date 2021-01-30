@@ -18,3 +18,27 @@
 ![](https://cdn.jsdelivr.net/gh/MannyCooper/Image-Hosting@main/img/code-block.png)
 - [ ] Better image lazy load
 - [ ] Fix Justified Gallery
+
+用到的 Hexo 依赖：
+```
+    "hexo-baidu-url-submit": "^0.0.6",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-component-inferno": "^0.10.1",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-baidu-sitemap": "^0.1.9",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-seo-friendly-sitemap": "^0.2.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-log": "^2.0.0",
+    "hexo-pagination": "^1.0.0",
+    "hexo-post-series": "^1.0.8",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-inferno": "^0.1.3",
+    "hexo-renderer-markdown-it": "^5.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-util": "^2.2.0",
+```
